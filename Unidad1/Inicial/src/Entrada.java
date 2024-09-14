@@ -3,7 +3,5 @@ public class Entrada {
 
         System.out.println("Ejemplo de mensaje");
 
-
-
     }
 }
