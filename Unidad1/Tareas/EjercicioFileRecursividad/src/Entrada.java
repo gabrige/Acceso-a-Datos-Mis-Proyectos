@@ -7,8 +7,7 @@ public class Entrada {
 
         GestorFicheros gestorFicheros = new GestorFicheros();
 
-    /*Parte 1: Listar el nombre de todos los ficheros ubicados en un directorio (en clase hemos puesto como ejemplo un
-    directorio creado en el paquete resources)*/
+    /*Parte 1: Listar el nombre de todos los ficheros ubicados en un directorio cualquiera*/
 
         System.out.println("Part 1");
         gestorFicheros.lecturaDirectorios("src/resources/directorio");
@@ -23,7 +22,7 @@ public class Entrada {
     así como la resolución del ejercicio.*/
 
         System.out.println("\n" + "Part 3");
-        gestorFicheros.lecturaRecursiva("C:\\Users\\gabri\\Documents\\FP DAM UNIR\\Segundo Curso\\Acceso A Datos\\Proyectos IntelliJ IDEA\\Acceso-a-Datos---UNIR\\Unidad1\\Fichero");
+        gestorFicheros.lecturaRecursiva("C:\\Users\\gabri\\Documents\\FP_DAM_UNIR\\Segundo_Curso\\Acceso A Datos\\Proyectos IntelliJ IDEA\\Acceso-a-Datos---UNIR\\Unidad1\\Fichero");
 
     }
 }
