@@ -31,7 +31,7 @@ public class GestorFicheros {
 
     public void lecturaRecursiva(String path) {
         File file = new File(path); // paso a un fichero logico y fisico
-        //File[] ficheros = file.listFiles();
+        //File[] ficheros = file.listFiles(); -> esto es lo mismo que file.listFiles() dentro del for
         for (File item : file.listFiles()) {
             System.out.println(item.getName());
             if (item.isDirectory()) {
