@@ -1,27 +1,48 @@
 package Controller;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class GestorFicheros {
 
     public void lecturaTextoPlano(String path){
         File file = new File(path);
-        FileReader fileReader = null;
+        //FileReader fileReader = null;
+        BufferedReader bufferedReader = null;
 
               if(file.exists() && file.isFile()){
 
                   try{
-                      fileReader = new FileReader(file);
+                      //fileReader = new FileReader(file);
                       //fileReader.read(); //Para quitar este error poner una "clause(catch)" con alt + enter
                       // el .read() lee una letra por letra
-                      int lectura = 0;
+
+                      //Forma de lectura secuencial completa con "FileReader"
+                      /* int lectura = 0;
 
                       while((lectura = fileReader.read()) > -1){
 
                           System.out.print((char) lectura);
+
+                      }*/
+
+                      /*
+                      bufferedReader = new BufferedReader(new FileReader(file)); -> es sincronizado (si tiene varios hilos, se comunican
+                      entre ellos para decir quien tiene el objeto ocupado)
+
+                      String lectura = null;
+                      while((lectura = bufferedReader.readLine()) != null){
+
+                          System.out.println(lectura);
+
+                      }
+
+                       */
+
+                      StringBuilder lecturaCompleta = new StringBuilder(); //solo lo va a utilizar un hilo
+                      // es hacer el mismo while pero adaptado al string builder
+                      while((lectura = bufferedReader.readLine()) != null){
+
+                          System.out.println(lectura);
 
                       }
 
@@ -30,8 +51,6 @@ public class GestorFicheros {
                       System.out.println("Fallo en la lectura del Fichero");
                       System.out.println(e.getMessage());
 
-                  } catch (IOException e) {
-                      throw new RuntimeException(e);
                   } finally {
 
                       try {
