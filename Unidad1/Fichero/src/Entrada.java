@@ -13,7 +13,7 @@ public class Entrada {
         System.out.println(ficheroSinPuntero.length());
         System.out.println(ficheroSinPuntero.exists());
 
-        //Ruta relativa con content root que es la tipica
+        //Ruta relativa from content root que es la tipica que se usa
 
         File ficheroSinPuntero2 = new File("src/resources/direcotrio/ejemplo_fichero.md");
         System.out.println("\n" + ficheroSinPuntero2.getName());
@@ -22,7 +22,7 @@ public class Entrada {
         System.out.println(ficheroSinPuntero2.exists());
         System.out.println(ficheroSinPuntero2.isFile());
 
-        //Ruta relativa con content root que es la tipica solo con el directorio
+        //Ruta relativa from content root que es la tipica solo con el directorio
 
         File ficheroSinPuntero3 = new File("src/resources/direcotrio");
         System.out.println("\n" + ficheroSinPuntero3.getName());
@@ -34,7 +34,7 @@ public class Entrada {
 
         ficheroSinPuntero3.listFiles();
 
-        //list() -> ,e devuelve un String [] -> todas las rutas de los FICHEROS que estan dentro del directorio (solo devuelve las rutas)
+        //list() -> me devuelve un String [] -> todas las rutas de los FICHEROS que estan dentro del directorio (solo devuelve las rutas)
 
         ficheroSinPuntero3.list();
 
