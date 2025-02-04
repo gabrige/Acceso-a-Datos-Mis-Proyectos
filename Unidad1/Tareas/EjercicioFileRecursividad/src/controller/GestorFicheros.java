@@ -5,6 +5,7 @@ import java.io.File;
 public class GestorFicheros {
 
     public void lecturaDirectorios(String path){
+
         File file = new File(path);
         File[] ficheros = file.listFiles();
         for(File item : ficheros){
