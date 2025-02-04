@@ -37,7 +37,7 @@ public class GestorFicheros {
                 System.out.println(lecturaCompleta.toString());
                 // JSON
                 // toda la lectura
-                /*int lectura = fileReader.read(); // int -> UNICODE ASCI
+                /* int lectura = fileReader.read(); // int -> UNICODE ASCI
                 System.out.print((char) lectura);
                 lectura = fileReader.read(); // int -> UNICODE ASCI
                 System.out.print((char) lectura);

@@ -11,12 +11,6 @@ public class Entrada {
 
 
         gestorFicheros.lecturaTextoPlano("src/Resources/Lectura.txt");
-        /*
-        Ultimo recurso para tratar la excepcion "Alt + Enter y añadir en el main throws FileNotFoundException"
-        Deberíamos solo usar la primera forma
-        */
-
-
-
+      
     }
 }
