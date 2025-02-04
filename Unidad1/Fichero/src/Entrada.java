@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class Entrada {
     public static void main(String[] args) {
-        
+
         // FILE -> fichero logico -> fisico
 
         //fichero logico
